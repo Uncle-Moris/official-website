@@ -1,0 +1,32 @@
+.burger-btn{
+  position: fixed;
+  top: 36px;
+  right: 36px;
+  width: 60px;
+  height: 60px;
+  border-color: green;
+  background: none;
+}
+
+
+//@media screen and (min-width: 768px) {
+//  .burger-btn{
+//    width: 48px;
+//    height: 48px;
+//  }
+//}
+@media screen and (min-width: 992px ){
+  .burger-btn{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px ){
+  .burger-btn{
+    width: 72px;
+    height: 72px;
+  }
+}
+
+

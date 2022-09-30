@@ -1,9 +1,9 @@
-//@import 'abstracts/variables';
-//@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 //
 //@import 'vendors/bootstrap';
 
-@import 'reset';
+@import 'base/reset';
 //@import 'base/typography';
 
 //@import 'layout/navigation';
@@ -13,12 +13,15 @@
 //@import 'layout/sidebar';
 //@import 'layout/forms';
 //
-//@import 'components/buttons';
+
 //@import 'components/carousel';
 //@import 'components/cover';
 //@import 'components/dropdown';
+@import 'components';
+@import 'components/buttons';
+@import 'components/wrappers';
 //
-//@import 'pages/home';
+@import 'pages/home';
 //@import 'pages/contact';
 //
 //@import 'themes/theme';
