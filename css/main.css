@@ -10,22 +10,16 @@ html {
 
 body {
   font-size: 62.5%;
-  background-color: #333333;
-}
-
-.red {
-  background-color: red;
-  width: 100%;
-  height: 250px;
+  background-color: #343434;
 }
 
 .burger-btn {
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 36px;
-  height: 42px;
-  padding: 10px;
+  width: 60px;
+  height: 60px;
+  padding: 10px 6px;
   cursor: pointer;
   background-color: transparent;
   border: 0;
@@ -35,30 +29,32 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  top: 0;
-  right: 0;
-  background-color: green;
-  z-index: 110000;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50);
 }
 .burger-btn__inner {
   width: 100%;
-  height: 3px;
-  background-color: red;
+  height: 4px;
+  background-color: #E9DCBE;
   position: absolute;
+  border-radius: 2px;
+  top: 12px;
 }
 .burger-btn__inner:before, .burger-btn__inner:after {
   width: 100%;
-  height: 3px;
-  background-color: red;
+  height: 4px;
+  background-color: #E9DCBE;
   position: absolute;
+  border-radius: 2px;
   content: "";
 }
 .burger-btn__inner:before {
-  top: -11px;
+  top: -12px;
   left: 0;
 }
 .burger-btn__inner:after {
-  top: 11px;
+  top: 12px;
   left: 0;
 }
 

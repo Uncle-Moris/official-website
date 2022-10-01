@@ -1,19 +1,20 @@
+@import '../abstracts/variables';
+
 @mixin burgerBar {
   width: 100%;
-  height: 3px;
-  background-color: red;
+  height: 4px;
+  background-color: $gold;
   position: absolute;
+  border-radius: 2px;
 }
-
 
 .burger-btn{
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 36px;
-  height: 42px;
-
-  padding: 10px;
+  width: 60px;
+  height: 60px;
+  padding: 10px 6px;
   cursor: pointer;
   background-color: transparent;
   border: 0;
@@ -22,27 +23,25 @@
     width: 100%;
     height: 100%;
     position: relative;
-    top: 0;
-    right: 0;
-    background-color: green;
-    z-index: 110000;
+    top: 50%;
+    right:  50%;
+    transform: translate(-50%, -50);
   }
   &__inner {
     @include burgerBar;
-
+    top: 12px;
     &:before, &:after {
+
       @include burgerBar;
       content: '';
     }
-
     &:before {
-      top: -11px;
+      top: -12px;
       left: 0;
     }
     &:after {
-      top: 11px;
+      top: 12px;
       left: 0;
-
     }
   }
 }
@@ -68,5 +67,3 @@
 //    height: 72px;
 //  }
 //}
-
-
