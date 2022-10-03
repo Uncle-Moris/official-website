@@ -1,12 +1,6 @@
 @import '../abstracts/variables';
+@use '../abstracts/mixins' as *;
 
-@mixin burgerBar {
-  width: 100%;
-  height: 4px;
-  background-color: $gold;
-  position: absolute;
-  border-radius: 2px;
-}
 
 .burger-btn{
   position: fixed;
