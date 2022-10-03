@@ -1,11 +1,12 @@
 @forward "../components/buttons";
 
-@mixin heroImages($bgImg){
-  background-image: $blue-gradient, url($bgImg);
+@mixin heroImages($color,$bgImg){
+  background-image: $color, url($bgImg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
 @mixin burgerBar {
   width: 100%;
   height: 4px;
