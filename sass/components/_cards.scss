@@ -1,0 +1,29 @@
+.card__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+// todo fill card styles
+
+.card {
+  //aside
+  &__aside{
+  }
+  &__figure {
+  }
+  &__image{
+  }
+  //header
+  &__header{}
+  &__title{}
+  &__subtitle{}
+  //body
+  &__body{}
+  &__copy{}
+  //footer
+  &__footer{}
+  &__action{
+    &-btn{
+
+    }
+  }
+}
