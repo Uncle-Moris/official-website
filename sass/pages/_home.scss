@@ -11,6 +11,7 @@
   height: 75vh;
   color: v.$gold;
   @include m.heroImages('../img/digitization_1920.jpeg');
+  filter: sepia(0.5);
   background-attachment: scroll;
   z-index: 0;
   &__heading {
@@ -18,5 +19,14 @@
   }
   &__text {
     font-size: 1.4rem;
+  }
+}
+
+.pricing{
+  height: 75vh;
+  width: 100%;
+  background-color: blueviolet;
+  &__heading{
+    font-size: 4.8rem;
   }
 }

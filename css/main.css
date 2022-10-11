@@ -67,6 +67,55 @@ body {
   padding-right: 16px;
 }
 
+.card__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flip-card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 10s, opacity 1s;
+}
+.flip-card__front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform: rotateY(0);
+  opacity: 1;
+  transition: transform 1s, opacity 1s;
+}
+.flip-card__back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+.flip-card:hover .flip-card__front {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card__back {
+  opacity: 1;
+  transform: rotateY(0);
+}
+
 .header {
   position: relative;
   display: flex;
@@ -81,6 +130,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   z-index: 100;
+  filter: sepia(0.5);
   background-attachment: scroll;
   z-index: 0;
 }
@@ -89,6 +139,15 @@ body {
 }
 .header__text {
   font-size: 1.4rem;
+}
+
+.pricing {
+  height: 75vh;
+  width: 100%;
+  background-color: blueviolet;
+}
+.pricing__heading {
+  font-size: 4.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
