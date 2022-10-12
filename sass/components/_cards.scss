@@ -1,13 +1,15 @@
 .card__container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 // todo fill card styles
 
 .flip-card {
   position: relative;
-  width: 300px;
+  width: 250px;
+  min-width: 250px;
   height: 450px;
   padding: 1rem;
   margin: 1rem;
