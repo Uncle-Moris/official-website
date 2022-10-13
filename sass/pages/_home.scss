@@ -1,6 +1,26 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
+
+//section
+.section{
+  &__padding {
+    padding: 6rem 0;
+  }
+  &__heading {
+    position: relative;
+    margin-bottom: 2em;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: v.$gold;
+    letter-spacing: 2px;
+  }
+}
+
+
+
 .header  {
   position: relative;
   display: flex;
@@ -11,7 +31,7 @@
   height: 75vh;
   color: v.$gold;
   @include m.heroImages('../img/digitization_1920.jpeg');
-  filter: sepia(0.5);
+  filter: sepia(0.8);
   background-attachment: scroll;
   z-index: 0;
   &__heading {
@@ -23,9 +43,8 @@
 }
 
 .pricing{
-  height: 75vh;
   width: 100%;
-  background-color: blueviolet;
+  border:.2rem dotted  red;
   &__heading{
     font-size: 4.8rem;
   }

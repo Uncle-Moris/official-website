@@ -78,7 +78,7 @@ body {
   position: relative;
   width: 250px;
   min-width: 250px;
-  height: 450px;
+  height: 380px;
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
@@ -122,6 +122,20 @@ body {
   font-size: 4.8rem;
 }
 
+.section__padding {
+  padding: 6rem 0;
+}
+.section__heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #E9DCBE;
+  letter-spacing: 2px;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -136,7 +150,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   z-index: 100;
-  filter: sepia(0.5);
+  filter: sepia(0.8);
   background-attachment: scroll;
   z-index: 0;
 }
@@ -148,9 +162,8 @@ body {
 }
 
 .pricing {
-  height: 75vh;
   width: 100%;
-  background-color: blueviolet;
+  border: 0.2rem dotted red;
 }
 .pricing__heading {
   font-size: 4.8rem;
