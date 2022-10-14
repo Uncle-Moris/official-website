@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-// todo fill card styles
 
 .flip-card {
   position: relative;
@@ -16,7 +15,9 @@
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-
+  &__title {
+    font-size: 2.4rem;
+  }
 
   &__front {
     position: absolute;
@@ -43,6 +44,8 @@
     opacity: 0;
     transition: transform 1s, opacity 1s, color .1s;
   }
+
+
   &:hover {
     .flip-card__front {
       opacity: 0;
@@ -54,7 +57,5 @@
     }
 
   }
-  &__title {
-    font-size: 4.8rem;
-  }
+
 }

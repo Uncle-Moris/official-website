@@ -85,6 +85,9 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
+.flip-card__title {
+  font-size: 2.4rem;
+}
 .flip-card__front {
   position: absolute;
   top: 0;
@@ -117,9 +120,6 @@ body {
 .flip-card:hover .flip-card__back {
   opacity: 1;
   transform: rotateY(0);
-}
-.flip-card__title {
-  font-size: 4.8rem;
 }
 
 .section__padding {
