@@ -1,8 +1,5 @@
 @use "../abstracts/variables" as v;
 
-//@forward "../components/buttons";
-
-
 
 @mixin heroImages($bgImg){
   background-image: url($bgImg);
