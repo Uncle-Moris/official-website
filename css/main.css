@@ -60,6 +60,24 @@ body {
   left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .burger-btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .burger-btn {
+    width: 72px;
+    height: 72px;
+  }
+}
 .wrapper {
   max-width: 992px;
   margin-left: auto;
@@ -135,6 +153,12 @@ body {
   text-align: center;
   color: #E9DCBE;
   letter-spacing: 2px;
+}
+
+.about__miniature {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .header {
