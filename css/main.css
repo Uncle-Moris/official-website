@@ -5,12 +5,17 @@
 }
 
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
   background-color: #343434;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+  font-family: "Times New Roman";
 }
 
 .burger-btn {
@@ -33,7 +38,7 @@ body {
   position: relative;
   top: 50%;
   right: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50);
 }
 .burger-btn__inner {
   width: 100%;
@@ -79,11 +84,10 @@ body {
   }
 }
 .wrapper {
-  max-width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .card__container {
@@ -139,6 +143,58 @@ body {
 .flip-card:hover .flip-card__back {
   opacity: 1;
   transform: rotateY(0);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #8E8B82;
+  z-index: 2;
+  border-bottom: #E9DCBE solid 2px;
+}
+.navbar__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.navbar__logo {
+  font-size: 3.6rem;
+  color: #E9DCBE;
+}
+.navbar__logo p, .navbar__logo .fa-bookmark {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: static;
+  height: 80px;
+  width: auto;
+  transform: translateX(0);
+  opacity: 1;
+  background: none;
+  overflow: hidden;
+}
+.navbar__link {
+  display: inline-block;
+  margin-top: 1.5em;
+  font-size: 2rem;
+  list-style: none;
+  text-transform: uppercase;
+}
+.navbar__link :active, .navbar__link :focus, .navbar__link :hover {
+  color: red;
+  transition: color 0.3s;
+  translate: 0px 2px;
+}
+.navbar__link a {
+  color: #E9DCBE;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .section__padding {

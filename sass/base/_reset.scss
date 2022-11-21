@@ -6,9 +6,15 @@
   box-sizing: border-box;
 }
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
-body{
-  font-size: 62.5%;
+
+body {
+  display: flex;
+  flex-direction: column;
   background-color: c.$black;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+  font-family: "Times New Roman";
 }

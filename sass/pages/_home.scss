@@ -1,6 +1,62 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
+// NAVIGATION
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: v.$grey;
+  z-index: 2;
+
+  border-bottom: v.$gold solid 2px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  &__logo {
+    font-size: 3.6rem;
+    color: v.$gold;
+    p, .fa-bookmark {
+      display: inline-block;
+      margin: .5rem;
+    }
+
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    height: 80px;
+    width: auto;
+    transform: translateX(0);
+    opacity: 1;
+    background: none;
+    overflow: hidden;
+  }
+  &__link{
+    display: inline-block;
+    margin-top: 1.5em;
+
+    font-size: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+    :active,:focus, :hover {
+      color: red;
+      transition: color 0.3s;
+      translate: 0px 2px;
+    }
+    a{
+      color: v.$gold;
+      padding: 1rem;
+      text-decoration: none;
+    }
+  }
+}
 
 //sections
 .section{
