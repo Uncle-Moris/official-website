@@ -20,6 +20,7 @@
   &__logo {
     font-size: 3.6rem;
     color: v.$gold;
+    cursor: pointer;
     p, .fa-bookmark {
       display: inline-block;
       margin: .5rem;
@@ -46,7 +47,7 @@
     list-style: none;
     text-transform: uppercase;
     :active,:focus, :hover {
-      color: red;
+      color: v.$dark-gold;
       transition: color 0.3s;
       translate: 0px 2px;
     }
@@ -58,31 +59,9 @@
   }
 }
 
-//sections
-.section{
-
-  &__padding {
-    padding: 6rem 0;
-  }
-
-  &__heading {
-    position: relative;
-    margin-bottom: 2em;
-    font-size: 3rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-    color: v.$gold;
-    letter-spacing: 2px;
-  }
-}
-//
-.about {
-  &__miniature {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
+.main {
+  position: relative;
+  top: 70px;
 }
 
 .header  {
@@ -92,7 +71,7 @@
   align-items: center;
   flex-direction: column;
   padding: 10px;
-  height: 75vh;
+  height: 40vh;
   color: v.$gold;
   @include m.heroImages('../img/digitization_1920.jpeg');
   filter: sepia(0.8);
@@ -105,6 +84,65 @@
     font-size: 1.4rem;
   }
 }
+
+
+
+//sections
+.section{
+  &__padding {
+    padding: 4rem 0;
+  }
+  &__heading {
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: v.$gold;
+    letter-spacing: 5px;
+  }
+}
+//
+.about {
+
+
+
+
+
+  align-items: center;
+  &-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__text{
+      margin: 0rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        color: v.$gold;
+      }
+    }
+
+
+    &__card{
+      box-shadow:  v.$gold -3px -3px 5px;
+
+      img {
+        padding: 20px;
+        margin: 2rem;
+        display: block;;
+        width: 330px;
+
+      }
+
+    }
+  }
+}
+
+
+
 .pricing{
   width: 100%;
   border:.2rem dotted  red;
@@ -116,6 +154,8 @@
 
 // footer
 .footer {
+  text-align: center;
+  color: v.$gold;
   &__padding {
     padding: 2rem 0;
   }
