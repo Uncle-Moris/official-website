@@ -54,9 +54,14 @@
       color: v.$them-color-light;
       padding: 1rem;
       text-decoration: none;
+      letter-spacing: 2px;
     }
   }
 }
+
+
+
+
 
 .main {
   position: relative;
@@ -183,5 +188,17 @@
   color: v.$them-color-light;
   &__padding {
     padding: 2rem 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .burger-btn{
+    width: 72px;
+    height: 72px;
+    display: block;
+  }
+  .navbar__list {
+    display: none;
   }
 }

@@ -1,12 +1,7 @@
 @import '../abstracts/variables';
 
 .burger-btn{
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  padding: 10px 6px;
+  padding: 16px 16px;
   cursor: pointer;
   background-color: transparent;
   border: 0;
@@ -17,24 +12,20 @@
     width: 100%;
     height: 100%;
     position: relative;
-    top: 50%;
-    right:  50%;
-    transform: translate(-50%, -50);
   }
   &__inner {
+    top: 45%;
     @include burgerBar;
-    top: 12px;
     &:before, &:after {
-
       @include burgerBar;
       content: '';
     }
     &:before {
-      top: -12px;
+      top: -15px;
       left: 0;
     }
     &:after {
-      top: 12px;
+      top: 15px;
       left: 0;
     }
   }
@@ -42,22 +33,10 @@
 
 
 
-@media screen and (min-width: 768px) {
-  .burger-btn{
-    width: 48px;
-    height: 48px;
-  }
-}
-@media screen and (min-width: 992px ){
-  .burger-btn{
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px ){
+@media screen and (max-width: 768px) {
   .burger-btn{
     width: 72px;
     height: 72px;
+    display: block;
   }
 }
