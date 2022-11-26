@@ -29,7 +29,7 @@ ol, ul {
   border: 0;
   margin: 0;
   z-index: 5;
-  display: none;
+  display: block;
 }
 .burger-btn__box {
   width: 100%;
@@ -79,7 +79,7 @@ ol, ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .flip-card {
@@ -93,9 +93,6 @@ ol, ul {
   overflow: hidden;
   cursor: pointer;
 }
-.flip-card__title {
-  font-size: 2.4rem;
-}
 .flip-card__front {
   position: absolute;
   top: 0;
@@ -108,6 +105,9 @@ ol, ul {
   transform: rotateY(0);
   opacity: 1;
   transition: transform 1s, opacity 1s, color 0.1s;
+}
+.flip-card__front p {
+  padding: 10%;
 }
 .flip-card__back {
   position: absolute;
@@ -146,15 +146,16 @@ ol, ul {
 }
 .navbar__logo {
   font-size: 3.6rem;
-  color: rgb(240, 202, 163);
   cursor: pointer;
 }
-.navbar__logo p, .navbar__logo .fa-bookmark {
+.navbar__logo a {
+  padding: 1.6rem;
   display: inline-block;
+  color: rgb(240, 202, 163);
   margin: 0.5rem;
 }
 .navbar__list {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   position: static;
@@ -184,11 +185,6 @@ ol, ul {
   letter-spacing: 2px;
 }
 
-.main {
-  position: relative;
-  top: 70px;
-}
-
 .header {
   position: relative;
   display: flex;
@@ -208,11 +204,18 @@ ol, ul {
 }
 .header__heading {
   color: rgb(240, 202, 163);
+  text-shadow: rgb(59, 24, 95) 1px 1px 5px;
   font-size: 4.8rem;
 }
 .header__text {
   color: rgb(240, 202, 163);
-  font-size: 1.4rem;
+  text-shadow: rgb(59, 24, 95) 1px 1px 2px;
+  font-size: 2.4rem;
+}
+
+.main {
+  position: relative;
+  top: 70px;
 }
 
 .section__padding {
@@ -304,14 +307,14 @@ ol, ul {
   padding: 2rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .burger-btn {
     width: 72px;
     height: 72px;
-    display: block;
+    display: none;
   }
   .navbar__list {
-    display: none;
+    display: flex;
   }
 }
 
