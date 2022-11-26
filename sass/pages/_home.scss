@@ -6,10 +6,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: v.$black;
+  background-color: v.$them-color-dark;
   z-index: 2;
 
-  border-bottom: v.$gold solid 2px;
+  border-bottom: v.$them-color-light solid 2px;
 
   &__nav {
     display: flex;
@@ -19,7 +19,7 @@
   }
   &__logo {
     font-size: 3.6rem;
-    color: v.$gold;
+    color: v.$them-color-light;
     cursor: pointer;
     p, .fa-bookmark {
       display: inline-block;
@@ -42,17 +42,16 @@
   &__link{
     display: inline-block;
     margin-top: 1.5em;
-
     font-size: 2rem;
     list-style: none;
     text-transform: uppercase;
     :active,:focus, :hover {
-      color: v.$dark-gold;
+      color: v.$them-color-pink;
       transition: color 0.3s;
       translate: 0px 2px;
     }
     a{
-      color: v.$gold;
+      color: v.$them-color-light;
       padding: 1rem;
       text-decoration: none;
     }
@@ -72,20 +71,20 @@
   flex-direction: column;
   padding: 10px;
   height: 40vh;
-  color: v.$gold;
-  @include m.heroImages('../img/digitization_1920.jpeg');
-  filter: sepia(0.8);
+
+  @include m.heroImages('../img/arctic_1920.jpeg');
+  filter:  invert(-85%);
   background-attachment: scroll;
   z-index: 0;
   &__heading {
+    color: v.$them-color-light;
     font-size: 4.8rem;
   }
   &__text {
+    color: v.$them-color-light;
     font-size: 1.4rem;
   }
 }
-
-
 
 //sections
 .section{
@@ -99,7 +98,7 @@
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
-    color: v.$gold;
+    color: v.$them-color-light;
     letter-spacing: 5px;
   }
 }
@@ -115,16 +114,16 @@
       flex-direction: column;
       justify-content: space-between;
       p {
-        color: v.$gold;
+        color: v.$them-color-light;
       }
     }
     &__card{
-      box-shadow:  v.$gold -3px -3px 5px;
+      box-shadow:  v.$them-color-light -3px -3px 5px;
 
       img {
         padding: 20px;
         margin: 2rem;
-        display: block;;
+        display: block;
         width: 330px;
       }
     }
@@ -136,8 +135,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
   }
   &-box {
     display: flex;
@@ -150,7 +147,7 @@
       position: relative;
       margin-top: 0;
       text-align: center;
-      color: v.$gold;
+      color: v.$them-color-light;
     }
     p {
       color: v.$white;
@@ -161,17 +158,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    label {
+      color: v.$them-color-light;
+      padding: 5px;
+
+    }
+    input {
+      border: solid v.$them-color-pink 3px;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 200px;
+      border: solid v.$them-color-pink 3px;
+      border-radius: 5px;
+      background-color: rgba(225, 157, 199, 0.62);
+      color: v.$them-color-light;
+    }
   }
 }
-
-
-
-
 
 // footer
 .footer {
   text-align: center;
-  color: v.$gold;
+  color: v.$them-color-light;
   &__padding {
     padding: 2rem 0;
   }
