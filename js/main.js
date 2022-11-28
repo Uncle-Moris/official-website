@@ -6,3 +6,7 @@ const year = new Date().getFullYear();
 footerYear.append(`${year}`)
 
 
+// nav
+const burgerBtn = document.querySelector('.burger-btn')
+
+burgerBtn.addEventListener('click', ()=> {})

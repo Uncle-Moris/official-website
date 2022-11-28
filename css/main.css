@@ -178,11 +178,19 @@ ol, ul {
   transition: color 0.3s;
   translate: 0px 2px;
 }
+.navbar__link #projects {
+  scroll-margin-top: 150px;
+}
 .navbar__link a {
+  scroll-margin-top: 150px;
   color: rgb(240, 202, 163);
   padding: 1rem;
   text-decoration: none;
   letter-spacing: 2px;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .header {

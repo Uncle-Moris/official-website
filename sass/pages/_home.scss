@@ -55,15 +55,23 @@
       transition: color 0.3s;
       translate: 0px 2px;
     }
-
-    a{
+    #projects {
+      scroll-margin-top: 150px;
+    }
+    a {
+      scroll-margin-top: 150px;
       color: v.$them-color-light;
       padding: 1rem;
       text-decoration: none;
       letter-spacing: 2px;
+
     }
   }
 }
+.mobile-nav {
+  display: none;
+}
+//----
 
 .header  {
   position: relative;
