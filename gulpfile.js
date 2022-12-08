@@ -3,6 +3,7 @@ const {src, dest, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('gulp-cssnano');
 
+const imagemin = require('gulp-imagemin');
 
 const paths = {
     sass: './src/sass/**/*.scss',
@@ -13,12 +14,21 @@ const paths = {
     imgDest:'./dist/img'
 }
 
-function sassCompiler(done) {
+function sassCompiler(cb) {
     src(paths.sass)
         .pipe(sass().on('error', sass.logError))
         .pipe(cssnano())
         .pipe(dest(paths.sassDest));
-    done()
+    cb()
 }
 
-exports.default = series(sassCompiler)
+
+function convertImages(cb) {
+    src(paths.img)
+        .pipe(imagemin())
+        .pipe(dest(paths.imgDest));
+    cb()
+}
+
+
+exports.default = series(sassCompiler, convertImages)
