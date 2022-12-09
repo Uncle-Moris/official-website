@@ -82,7 +82,6 @@
   padding: 10px;
   height: 40vh;
 
-  @include m.heroImages('../img/arctic_1920.jpeg');
   filter:  invert(-85%);
   background-attachment: scroll;
   z-index: 0;

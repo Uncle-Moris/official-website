@@ -1,4 +1,4 @@
-@use "../abstracts/variables" as c;
+//@use "../abstracts/variables" as c;
 
 * {
   margin: 0;
@@ -13,10 +13,11 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: c.$them-color-dark;
   overflow-x: hidden;
   font-size: 1.8rem;
   font-family: "Times New Roman";
+  height: 100vh;
+  background-color: red;
 }
 
 ol, ul {
