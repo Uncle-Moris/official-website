@@ -1,0 +1,203 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+// NAVIGATION
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: v.$them-color-dark;
+  z-index: 2;
+
+  border-bottom: v.$them-color-light solid 2px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  &__logo {
+
+    font-size: 3.6rem;
+
+    cursor: pointer;
+
+    a {
+      padding: 1.6rem;
+      display: inline-block;
+      color: v.$them-color-light;
+      margin: .5rem;
+    }
+
+  }
+  &__list {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    height: 80px;
+    width: auto;
+    transform: translateX(0);
+    opacity: 1;
+    background: none;
+    overflow: hidden;
+  }
+  &__link{
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+
+    :active,:focus, :hover {
+      color: v.$them-color-pink;
+      transition: color 0.3s;
+      translate: 0px 2px;
+    }
+    #projects {
+      scroll-margin-top: 150px;
+    }
+    a {
+      scroll-margin-top: 150px;
+      color: v.$them-color-light;
+      padding: 1rem;
+      text-decoration: none;
+      letter-spacing: 2px;
+
+    }
+  }
+}
+.mobile-nav {
+  display: none;
+}
+//----
+
+.header  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  height: 40vh;
+
+  filter:  invert(-85%);
+  background-attachment: scroll;
+  z-index: 0;
+  &__heading {
+    color: v.$them-color-light;
+    text-shadow: v.$them-color-violet 1px 1px 5px;
+    font-size: 4.8rem;
+  }
+  &__text {
+    color: v.$them-color-light;
+    text-shadow: v.$them-color-violet 1px 1px 2px;
+    font-size: 2.4rem;
+  }
+}
+
+.main {
+  position: relative;
+  top: 70px;
+}
+
+//sections
+.section{
+  &__padding {
+    padding: 6rem 0;
+  }
+  &__heading {
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: v.$them-color-light;
+    letter-spacing: 5px;
+  }
+}
+//
+.about {
+  &-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__text{
+      margin: 0rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        color: v.$them-color-light;
+      }
+    }
+    &__card{
+      box-shadow:  v.$them-color-light -3px -3px 5px;
+
+      img {
+        padding: 20px;
+        margin: 2rem;
+        display: block;
+        width: 330px;
+      }
+    }
+  }
+}
+
+.contact {
+  &-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100%;
+    padding: 20px;
+
+    h3 {
+      position: relative;
+      margin-top: 0;
+      text-align: center;
+      color: v.$them-color-light;
+    }
+    p {
+      color: v.$white;
+      text-align: center
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    label {
+      color: v.$them-color-light;
+      padding: 5px;
+
+    }
+    input {
+      border: solid v.$them-color-pink 3px;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 200px;
+      border: solid v.$them-color-pink 3px;
+      border-radius: 5px;
+      background-color: rgba(225, 157, 199, 0.62);
+      color: v.$them-color-light;
+    }
+  }
+}
+
+// footer
+.footer {
+  text-align: center;
+  color: v.$them-color-light;
+  &__padding {
+    padding: 2rem 0;
+  }
+}
