@@ -1,17 +1,11 @@
-navbar{
-  position: fixed;
-  top: 0;
+.navbar {
   display: flex;
-
-
-
-
-
-  &__logo{
-
-  }
-  &__list{
-    &-item{
+  justify-content: space-between;
+  &__logo-box{
+    padding: 20px;
+    img{
+      height: 110px;
+      width: 110px;
 
     }
   }
