@@ -1,12 +1,38 @@
 .navbar {
+  position: static;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  height: 110px;
+  z-index: 100;
+
   &__logo-box{
     padding: 20px;
-    img{
-      height: 110px;
-      width: 110px;
+    height: 100%;
 
+    img{
+      height: 100px;
+      //width: 110px;
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-item {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      &:hover {
+        color: aqua;
+      }
     }
   }
 }

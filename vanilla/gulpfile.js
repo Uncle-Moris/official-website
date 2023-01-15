@@ -12,7 +12,6 @@ const paths = {
     jsDest:'./dist/js',
     imgDest:'./dist/img'
 }
-
 function sassCompiler(cb) {
     src(paths.sass)
         .pipe(sass().on('error', sass.logError))
@@ -20,19 +19,16 @@ function sassCompiler(cb) {
         .pipe(dest(paths.sassDest));
     cb();
 }
-
 function jsMinify(cb) {
     src(paths.js)
         .pipe(uglify())
         .pipe(dest(paths.jsDest));
     cb();
 }
-
 function convertImages(cb) {
     src(paths.img)
         .pipe(imagemin())
         .pipe(dest(paths.imgDest));
     cb();
 }
-
 exports.default = series(sassCompiler, jsMinify, convertImages)
