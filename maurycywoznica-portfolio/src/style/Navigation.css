@@ -1,0 +1,26 @@
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease-out;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+}
+
+.nav-link:hover::before,
+.nav-link.active-link::before {
+    background-color: rgba(255, 255, 255, 0.15);
+    filter: blur(20px);
+}
+

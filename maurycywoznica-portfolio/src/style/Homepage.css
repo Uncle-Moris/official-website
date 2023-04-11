@@ -1,0 +1,13 @@
+.responsiveImage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.headerText {
+    background-image: linear-gradient(70deg, #0d47a1, transparent); /* Add the gradient to the header text */
+    color: transparent;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    text-shadow: 2px 2px 2px rgba(240, 240, 240, 0.5); /* Add a text shadow for the glass effect */
+}

@@ -1,9 +1,13 @@
 import React, {Component} from "react";
 
 class Navigation extends Component {
+
     render() {
         return (
-        <p>Hello Goofs</p>
+        <button
+
+
+            onClick={env => console.log('Elo')} className={'orange'}>Hello Goofs</button>
         )}
 }
 
