@@ -14,12 +14,12 @@ const Fonts = () => (
 
 // Create a custom theme with the desired font family
 const theme = createTheme({
-    typography: {
-        fontFamily: 'Nunito, sans-serif',
-    },
+    // typography: {
+    //     fontFamily: 'Nunito, sans-serif',
+    // },
     palette: {
         primary: {
-            main: 'rgba(19, 10, 67, 1)',
+            main: '#1E90FF',
         },
         secondary: {
             main: 'rgba(15, 11, 40, 1)',

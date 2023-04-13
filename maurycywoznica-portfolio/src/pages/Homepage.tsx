@@ -6,14 +6,7 @@ import '../style/Homepage.css';
 const Homepage = () => {
     return (
         <Box
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                minHeight: '100vh',
-                fontFamily: 'Nunito, sans-serif',
-                fontWeight: 400,
-                backgroundColor: '#f5f5f5',
-            }}
+
         >
             {/* Header */}
             <Box

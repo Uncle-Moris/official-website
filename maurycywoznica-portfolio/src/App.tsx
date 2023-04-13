@@ -13,7 +13,15 @@ const App: React.FC = () => {
     return (
         <Router>
             <Navigation />
-            <Box sx={{ mt: 8 }}>
+            <Box sx={{
+                        mt: 8,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        minHeight: '100vh',
+                        fontFamily: 'Nunito, sans-serif',
+                        fontWeight: 400,
+                        backgroundColor: '#e5dddd',
+            }}>
                 <Container>
                     <Routes>
                         <Route path="/" element={<Homepage />} />
