@@ -8,20 +8,18 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Homepage from "./pages/Homepage";
-
+import './style/colors.css';
 const App: React.FC = () => {
     return (
         <Router>
-            <Navigation />
+            <Navigation/>
             <Box sx={{
-                        mt: 8,
+                        mt: 0,
                         display: 'flex',
                         flexDirection: 'column',
                         minHeight: '100vh',
-                        fontFamily: 'Nunito, sans-serif',
-                        fontWeight: 400,
-                        backgroundColor: '#e5dddd',
-            }}>
+            }}
+            className={'lavender_bg'}>
                 <Container>
                     <Routes>
                         <Route path="/" element={<Homepage />} />
@@ -36,5 +34,4 @@ const App: React.FC = () => {
         </Router>
     );
 };
-
 export default App;

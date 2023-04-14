@@ -20,13 +20,13 @@ const About: React.FC = () => {
                     <Typography className={"subtitle_2"} variant="subtitle1">Subtitle 2</Typography>
 
                     <Typography className={"title_3"} variant="h1">Title 3</Typography>
-                    <Typography className={"subtitle_3"} variant="subtitle1">Subtitle 1</Typography>
+                    <Typography className={"subtitle_3"} variant="subtitle1">Subtitle 3</Typography>
 
-                    <Typography className={"title_1"} variant="h1">Title 1</Typography>
-                    <Typography className={"subtitle_1"} variant="subtitle1">Subtitle 1</Typography>
+                    <Typography className={"title_4"} variant="h1">Title 4</Typography>
+                    <Typography className={"subtitle_4"} variant="subtitle1">Subtitle 4</Typography>
 
-                    <Typography className={"title_1"} variant="h1">Title 1</Typography>
-                    <Typography className={"subtitle_1"} variant="subtitle1">Subtitle 1</Typography>
+                    <Typography className={"title_5"} variant="h1">Title 5</Typography>
+                    <Typography className={"subtitle_5"} variant="subtitle1">Subtitle 5</Typography>
 
                     <Typography className={"title_6"} variant="h1">Title 6</Typography>
                     <Typography className={"subtitle_6"} variant="subtitle1">Subtitle 6</Typography>
@@ -35,14 +35,13 @@ const About: React.FC = () => {
                     <Typography className={"subtitle_7"} variant="subtitle1">Subtitle 7</Typography>
 
                     <Typography className={"title_8"} variant="h1">Title 8</Typography>
-                    <Typography className={"subtitle_8"} variant="subtitle1">Subtitle 1</Typography>
+                    <Typography className={"subtitle_8"} variant="subtitle1">Subtitle 8</Typography>
 
                     <Typography className={"title_9"} variant="h1">Title 9</Typography>
-                    <Typography className={"subtitle_9"} variant="subtitle1">Subtitle 1</Typography>
+                    <Typography className={"subtitle_9"} variant="subtitle1">Subtitle 9</Typography>
 
                     <Typography className={"title_10"} variant="h1">Title 10</Typography>
                     <Typography className={"subtitle_10"} variant="subtitle1">Subtitle 10</Typography>
-
                 </Box>
 
             </Container>

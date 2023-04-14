@@ -15,9 +15,10 @@ const Homepage = () => {
                     px: 2,
                     textAlign: 'center',
                     fontWeight: 200,
+                    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
                 }}
             >
-                <Typography variant="h4" component="h1" className="headerText">
+                <Typography variant="h4" component="h1" className="title_gradient">
                     Welcome to My Site
                 </Typography>
             </Box>

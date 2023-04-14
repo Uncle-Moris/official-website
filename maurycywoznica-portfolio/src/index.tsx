@@ -14,17 +14,9 @@ const Fonts = () => (
 
 // Create a custom theme with the desired font family
 const theme = createTheme({
-    // typography: {
-    //     fontFamily: 'Nunito, sans-serif',
-    // },
-    palette: {
-        primary: {
-            main: '#1E90FF',
-        },
-        secondary: {
-            main: 'rgba(15, 11, 40, 1)',
-        },
-    },
+     typography: {
+         fontFamily: 'Nunito, sans-serif',
+     },
 });
 
 ReactDOM.render(

@@ -1,22 +1,19 @@
 import React from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import {Container, Typography, Box, Link} from '@mui/material';
 import '../style/Footer.css';
+import '../style/colors.css';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="footer">
-            <Container>
-                <Box display="flex" justifyContent="space-between" alignItems="center">
-                    <Typography variant="body1" className="footer-text">
-                        &copy; {new Date().getFullYear()} Maurycy Woźnica
-                    </Typography>
-                    <Typography variant="body1" className="footer-text">
-                        Email: mjw11@wp.pl | Phone: 123456789
-                    </Typography>
-                </Box>
-            </Container>
+        <footer className="pale-blue_bg">
+            <Box>
+                <Typography variant="body2" align="center" className={''}>
+                    &copy; {new Date().getFullYear()} Maurycy Woźnica
+                </Typography>
+            </Box>
         </footer>
     );
 };
+
 
 export default Footer;
