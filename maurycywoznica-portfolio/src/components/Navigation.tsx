@@ -30,7 +30,11 @@ const Navigation: React.FC = () => {
         </div>
     );
     return (
-        <AppBar position="static" className={'pale-blue_bg'}>
+        <AppBar position="static"  sx={
+          {
+            backgroundColor: 'rgba(135, 206, 250, 1)',
+          }
+        }>
             <Toolbar>
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
                     <NavLink to="/" className="nav-link">

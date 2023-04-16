@@ -16,7 +16,7 @@ const Fonts = () => (
 const theme = createTheme({
      typography: {
          fontFamily: 'Nunito, sans-serif',
-     },
+     }
 });
 
 ReactDOM.render(
