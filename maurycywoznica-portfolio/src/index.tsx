@@ -13,15 +13,31 @@ const Fonts = () => (
 );
 
 // Create a custom theme with the desired font family
-const theme = createTheme({
+let theme = createTheme({
      typography: {
          fontFamily: 'Nunito, sans-serif',
-     }
+         fontSize: 16,
+
+     },
+    palette: {
+         text: {
+             primary: '#FFFF',
+         }
+    },
+    components: {
+         MuiDrawer: {
+            styleOverrides: {
+                        paper: {
+                            backgroundImage: 'linear-gradient(60deg,rgb(176, 224, 230) 30%, rgb(135, 206, 250) 60%)',
+                            color : 'white'
+                        }
+                }
+         }
+    }
 });
 
 ReactDOM.render(
     <React.StrictMode>
-        {/* Include the Fonts component to load the Google Fonts */}
         <Fonts />
         <ThemeProvider theme={theme}>
             <CssBaseline />
@@ -30,5 +46,3 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root')
 );
-
-

@@ -1,12 +1,10 @@
-// src/components/SectionTitle.tsx
 import React, { FC } from 'react';
 import { Box, Typography } from '@mui/material';
 
 interface SectionTitleProps {
     title: string;
 }
-
-const SectionTitle: FC<SectionTitleProps> = ({ title }) => {
+const SectionTitle: FC<SectionTitleProps> = ({ title}) => {
     return (
         <Box
             sx={{
@@ -14,16 +12,14 @@ const SectionTitle: FC<SectionTitleProps> = ({ title }) => {
                 py: 3,
                 px: 2,
                 textAlign: 'center',
-                fontWeight: 200,
-                background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+                background: 'linear-gradient(90deg, rgb(176, 224, 230 ) 30%, rgb(135, 206, 250) 60%)',
                 borderRadius: 12,
             }}
         >
-            <Typography variant="h1" component="h1" className={'title_gradient'}>
+            <Typography variant="h1" component="h1" color={"white"} fontWeight={400}>
                 {title}
             </Typography>
         </Box>
     );
 };
-
 export default SectionTitle;

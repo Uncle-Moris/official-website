@@ -1,51 +1,142 @@
 import React from 'react';
-import { Container, Typography , Box} from '@mui/material';
-import '../App.css';
+import { Grid, Typography, Container, Avatar, Paper } from '@mui/material';
+import myImg from '../imgs/nice-mjw.svg';
+import visionImg from '../imgs/b4d02dc4bd4c439ba53bb968d0b61eba.webp';
+import SectionTitle from '../components/SectionTitle';
+import '../style/colors.css';
 
-const About: React.FC = () => {
+
+const About = () => {
     return (
-        <section className="about">
-            <Container>
-                <Typography variant="h4" className="section-title">
-                    About Me
-                </Typography>
-                <Typography variant="body1" className="section-text">
-                    Maurycy Woźnica is a visionary and self-educated developer who deeply believes that his apps and services can change the lives of many people for the better. He likes to provide value through his work.
-                </Typography>
-                <Box>
-                    <Typography className={"title_1"} variant="h1">Title 1</Typography>
-                    <Typography className={"subtitle_1"} variant="subtitle1">Subtitle 1</Typography>
+        <Container>
 
-                    <Typography className={"title_2"} variant="h1">Title 2</Typography>
-                    <Typography className={"subtitle_2"} variant="subtitle1">Subtitle 2</Typography>
+            <SectionTitle title={'Hello'}/>
 
-                    <Typography className={"title_3"} variant="h1">Title 3</Typography>
-                    <Typography className={"subtitle_3"} variant="subtitle1">Subtitle 3</Typography>
+            <Grid container spacing={1} className={'powder-blue_bg'} p={1}
+                  sx={{
+                      borderRadius: 12,
+                      my:3
+                  }}>
+                <Grid item xs={12}>
+                    <Typography variant="h2" sx={{
+                        textAlign: 'center',
+                        mt: 2, color:'white',
+                        fontWeight: 400 }}>
+                        About Me
+                    </Typography>
+                </Grid>
+                <Grid item container xs={12} alignItems="center">
+                    <Grid item xs={12}  lg={4}>
+                        <Avatar
+                            alt="Maurycy Woźnica"
+                            src={myImg}
+                            sx={{
+                                p: 4,
+                                height: { xs: 'auto', sm: 'auto' },
+                                width: { xs: 'auto', sm: 'auto' },
+                                borderRadius: 12,
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                            }}
+                        />
+                    </Grid>
+                    <Grid item lg={8} xs={12} >
+                        <div className="text-container" >
+                            <Typography variant="body1">
+                                My name is <b>Maurycy Woźnica</b>, and I'm a visionary programmer and artist based in Warsaw, Poland. I have a passion for creating unique projects that provide users with new value. With years of experience in the field, I'm constantly challenging myself to push the boundaries of what's possible.
+                            </Typography>
+                            <Typography variant="body1">
+                                As a programmer, I believe that the code we write can be a form of art. I enjoy finding creative solutions to complex problems and developing innovative technologies that help make people's lives easier. My ultimate goal is to create products that are both beautiful and functional, and that make a real difference in people's lives.
+                            </Typography>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Grid>
 
-                    <Typography className={"title_4"} variant="h1">Title 4</Typography>
-                    <Typography className={"subtitle_4"} variant="subtitle1">Subtitle 4</Typography>
+            <Grid container spacing={1} className={'pale-blue_bg '} p={1}
+                  sx={{
+                      borderRadius: 12,
+                      my:3
+                  }}>
+                <Grid item xs={12}>
+                    <Typography variant="h2" sx={{
+                        textAlign: 'center',
+                        mt: 2, color:'white',
+                        fontWeight: 400 }}>
+                        Vision
+                    </Typography>
+                </Grid>
+                <Grid item container xs={12} alignItems="center">
+                    <Grid item xs={12}  lg={4}>
+                        <Avatar
+                            alt="Maurycy Woźnica"
+                            src={visionImg}
+                            sx={{
+                                p: 4,
+                                height: { xs: 'auto', sm: 'auto' },
+                                width: { xs: 'auto', sm: 'auto' },
+                                borderRadius: 50,
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
 
-                    <Typography className={"title_5"} variant="h1">Title 5</Typography>
-                    <Typography className={"subtitle_5"} variant="subtitle1">Subtitle 5</Typography>
+                            }}
+                        />
+                    </Grid>
+                    <Grid item lg={8} xs={12}>
+                        <div className="text-container" >
+                            <Typography variant="body1">
+                                My name is <b>Maurycy Woźnica</b>, and I'm a visionary programmer and artist based in Warsaw, Poland. I have a passion for creating unique projects that provide users with new value. With years of experience in the field, I'm constantly challenging myself to push the boundaries of what's possible.
+                            </Typography>
+                            <Typography variant="body1">
+                                As a programmer, I believe that the code we write can be a form of art. I enjoy finding creative solutions to complex problems and developing innovative technologies that help make people's lives easier. My ultimate goal is to create products that are both beautiful and functional, and that make a real difference in people's lives.
+                            </Typography>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Grid>
 
-                    <Typography className={"title_6"} variant="h1">Title 6</Typography>
-                    <Typography className={"subtitle_6"} variant="subtitle1">Subtitle 6</Typography>
+            <Grid container spacing={1} className={'powder-blue_bg'} p={1}
+                  sx={{
+                      borderRadius: 12,
+                      my:3
+                  }}>
+                <Grid item xs={12}>
+                    <Typography variant="h2" sx={{
+                        textAlign: 'center',
+                        mt: 2, color:'white',
+                        fontWeight: 400 }}>
+                        About Me
+                    </Typography>
+                </Grid>
+                <Grid item container xs={12} alignItems="center">
+                    <Grid item xs={12}  lg={4}>
+                        <Avatar
+                            alt="Maurycy Woźnica"
+                            src={myImg}
+                            sx={{
+                                p: 4,
+                                height: { xs: 'auto', sm: 'auto' },
+                                width: { xs: 'auto', sm: 'auto' },
+                                borderRadius: 12,
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                            }}
+                        />
+                    </Grid>
+                    <Grid item lg={8} xs={12} >
+                        <div className="text-container" >
+                            <Typography variant="body1">
+                                My name is <b>Maurycy Woźnica</b>, and I'm a visionary programmer and artist based in Warsaw, Poland. I have a passion for creating unique projects that provide users with new value. With years of experience in the field, I'm constantly challenging myself to push the boundaries of what's possible.
+                            </Typography>
+                            <Typography variant="body1">
+                                As a programmer, I believe that the code we write can be a form of art. I enjoy finding creative solutions to complex problems and developing innovative technologies that help make people's lives easier. My ultimate goal is to create products that are both beautiful and functional, and that make a real difference in people's lives.
+                            </Typography>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Grid>
 
-                    <Typography className={"title_7"} variant="h1">Title 7</Typography>
-                    <Typography className={"subtitle_7"} variant="subtitle1">Subtitle 7</Typography>
-
-                    <Typography className={"title_8"} variant="h1">Title 8</Typography>
-                    <Typography className={"subtitle_8"} variant="subtitle1">Subtitle 8</Typography>
-
-                    <Typography className={"title_9"} variant="h1">Title 9</Typography>
-                    <Typography className={"subtitle_9"} variant="subtitle1">Subtitle 9</Typography>
-
-                    <Typography className={"title_10"} variant="h1">Title 10</Typography>
-                    <Typography className={"subtitle_10"} variant="subtitle1">Subtitle 10</Typography>
-                </Box>
-
-            </Container>
-        </section>
+        </Container>
     );
 };
 

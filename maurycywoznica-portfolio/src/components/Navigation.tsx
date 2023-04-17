@@ -30,25 +30,37 @@ const Navigation: React.FC = () => {
         </div>
     );
     return (
-        <AppBar position="static"  sx={
+        <AppBar sx={
           {
-            backgroundColor: 'rgba(135, 206, 250, 1)',
+              position: 'sticky',
+              background: 'linear-gradient(90deg, rgb(176, 224, 230 ) 30%, rgb(135, 206, 250) 60%)'
           }
         }>
             <Toolbar>
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                    <NavLink to="/" className="nav-link">
+                    <NavLink to="/about" className="nav-link">
                         Maurycy Woźnica
                     </NavLink>
                 </Typography>
-                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    {['About', 'Technologies', 'Projects', 'Contact'].map((text, index) => (
+                <Box sx={{ display: { xs: 'none', sm: 'block'  } }}>
+                    <Button color="inherit">
+                        <NavLink to={'/about'} className={
+                            ({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')
+                        }>
+                            About
+                        </NavLink>
+                    </Button>
+
+                    {[ 'Technologies', 'Projects', 'Contact'].map((text, index) => (
                         <Button color="inherit" key={text}>
-                            <NavLink to={`/${text.toLowerCase()}`} className={({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')}>
+                            <NavLink to={`/${text.toLowerCase()}`} className={
+                                ({ isActive }) => (isActive ? 'nav-link active-link' : 'nav-link')
+                            }>
                                 {text}
                             </NavLink>
                         </Button>
                     ))}
+
                 </Box>
                 <IconButton
                     edge="end"
