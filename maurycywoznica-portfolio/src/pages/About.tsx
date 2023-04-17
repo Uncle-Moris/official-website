@@ -12,6 +12,7 @@ const About = () => {
 
             <SectionTitle title={'Hello'}/>
 
+
             <Grid container spacing={1} className={'powder-blue_bg'} p={1}
                   sx={{
                       borderRadius: 12,
