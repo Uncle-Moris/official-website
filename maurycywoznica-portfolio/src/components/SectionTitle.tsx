@@ -16,7 +16,10 @@ const SectionTitle: FC<SectionTitleProps> = ({ title}) => {
                 borderRadius: 12,
             }}
         >
-            <Typography variant="h1" component="h1" color={"white"} fontWeight={400}>
+            <Typography variant="h1" component="h1" color={"white"} fontWeight={400}
+            sx={{
+             fontSize: { xs: '2rem', md: '3.5rem', lg: '5rem' },
+            }}>
                 {title}
             </Typography>
         </Box>

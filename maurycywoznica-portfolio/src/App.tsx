@@ -20,6 +20,7 @@ const App: React.FC = () => {
             className={'lavender_bg'}>
                 <Container>
                     <Routes>
+                        <Route path='/' element={<About/>} />
                         <Route path='/about' element={<About/>} />
                         <Route path="/technologies" element={<Technologies/>}/>
                         <Route path="/projects" element={<Projects />}/>
