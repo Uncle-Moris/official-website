@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Paper, Grid, Typography } from '@mui/material';
 
+import WorkExperience from './WorkExperience';
+
 import SectionTitle from '../components/SectionTitle';
 
 import ATLogo from '../imgs/projects/logo.jpg';
@@ -36,6 +38,8 @@ const Projects: React.FC = () => {
                     </Grid>
                 ))}
             </Grid>
+
+            <WorkExperience></WorkExperience>
         </Container>
     );
 };
