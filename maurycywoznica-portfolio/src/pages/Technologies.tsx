@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Typography, Paper, Grid, Box } from '@mui/material';
-import { styled } from '@mui/system';
 import SectionTitle from "../components/SectionTitle";
-
 import pythonLogo from '../imgs/technologies/Python_logo.png';
 import djangoLogo from '../imgs/technologies/django-logo-positive.svg';
 import reactLogo from '../imgs/technologies/React_logo.svg';
@@ -12,20 +10,6 @@ import jslogo from '../imgs/technologies/Unofficial_JavaScript_logo_2.png';
 import tslogo from '../imgs/technologies/Typescript_logo_2020.png';
 import materialUILogo from '../imgs/technologies/material-ui-1.svg';
 
-// Define the styled components for styling
-const StyledPaper = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(2),
-    height: '100%',
-}));
-
-const StyledImg = styled('img')({
-    width: '100%',
-    height: 'auto',
-    maxHeight: '150px',
-    objectFit: 'contain',
-});
-
-// Define the technologies array
 const techData = [
     { img: pythonLogo, title: "Python", description: "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace." },
     { img: djangoLogo, title: "Django", description: "Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. It encourages the use of reusable code by providing a rich set of utilities and follows the Model-View-Template architectural pattern." },
@@ -43,22 +27,32 @@ const Technologies: React.FC = () => {
                 <Grid container spacing={3} py={3}>
                     {techData.map((tech, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index}>
-                            <StyledPaper elevation={3}>
-                                <Box display="flex" justifyContent="center" alignItems="center" minHeight="150px">
-                                    <StyledImg src={tech.img} alt={tech.title} />
-                                </Box>
+                            <Paper elevation={16}
+                            sx={{
+                                padding: 3,
+                                height: '100%',
+                            }}>
+
+                                <Box component='img'
+                                    src={tech.img}
+                                     alt={tech.title + " logo"}
+                                     sx={{
+                                         width: '100%',
+                                         height: 'auto',
+                                         maxHeight: '150px',
+                                         objectFit: 'contain',
+                                     }}/>
                                 <Typography variant="h6" component="h2" color="textSecondary" textAlign={"center"}>
                                     {tech.title}
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary">
                                     {tech.description}
                                 </Typography>
-                            </StyledPaper>
+                            </Paper>
                         </Grid>
                     ))}
                 </Grid>
             </Container>
     );
 };
-
 export default Technologies;
