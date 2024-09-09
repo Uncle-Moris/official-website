@@ -10,7 +10,7 @@ function App() {
         <p>Your favorite DevOps</p>
         <img src={maurycyImage} className="App-logo" alt="Maurycy" />
         <p className="bottom-text">
-          The sole purpose of this page is to set up CI/CD for index.html, use AWS , and that's it XD.
+          The sole purpose of this page is to set up CI/CD for index.html, use AWS , and that's it XD .
         </p>
       </header>
     </div>
