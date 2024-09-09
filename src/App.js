@@ -10,7 +10,7 @@ function App() {
         <p>Your favorite DevOps</p> {/* Zmieniony tekst */}
         <img src={maurycyImage} className="App-logo" alt="Maurycy" />
         <p className="bottom-text">
-          The sole purpose of this page is to set up CI/CD for index.html, and that's it.
+          The sole purpose of this page is to set up CI/CD for index.html, use AWS , and that's it.
         </p> {/* Mały tekst przypięty do dołu nagłówka */}
       </header>
     </div>
